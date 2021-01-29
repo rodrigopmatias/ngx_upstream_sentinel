@@ -2,3 +2,4 @@
 **/.vscode
 **/*/*conf.json
 **/*/ups_*.conf
+dist
