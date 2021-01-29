@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ngx_upstream_sentinel"
-version = "0.0.3"
+version = "0.0.4"
 description = ""
 authors = ["Rodrigo Pinheiro Matias <rodrigopmatias@gmail.com>"]
 

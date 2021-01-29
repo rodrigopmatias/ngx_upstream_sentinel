@@ -32,7 +32,7 @@ def watch(target):
 
     return [target.get('host'), result]
 
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 
 class __App():
     '''
