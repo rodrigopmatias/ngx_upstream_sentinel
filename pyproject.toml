@@ -2,7 +2,7 @@
 name = "ngx_upstream_sentinel"
 version = "0.0.1"
 description = "Smart Sentinel for Upstreams to nginx"
-authors = ["Rodrigo Pinheiro Matias <rodrigomatias@mpto.mp.br>"]
+authors = ["Rodrigo Pinheiro Matias <rodrigopmatias@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
