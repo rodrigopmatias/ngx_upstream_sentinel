@@ -1,5 +1,5 @@
 **/__pycache__
 **/.vscode
-**/*/ups_*.conf
+*.conf
 conf.json
 dist

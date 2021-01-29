@@ -32,7 +32,7 @@ def watch(target):
 
     return [target.get('host'), result]
 
-__version__ = '0.0.5'
+__version__ = '0.0.6'
 
 class __App():
     '''
@@ -107,7 +107,6 @@ class __App():
                 callback=self.apply_result
             )
 
-            pool.join()
             time.sleep(sleep_interval)
 
 
