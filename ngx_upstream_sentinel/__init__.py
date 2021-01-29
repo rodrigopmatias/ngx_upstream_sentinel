@@ -5,6 +5,8 @@ import os
 import json
 import time
 
+from subprocess import call
+
 DEFAULT_CONFIG = {
     'sleep': 0.25,
     'name': 'myName',
@@ -30,7 +32,7 @@ def watch(target):
 
     return [target.get('host'), result]
 
-__version__ = '0.1.0'
+__version__ = '0.0.3'
 
 class __App():
     '''
@@ -54,6 +56,13 @@ class __App():
         '''
         return self.config.get('verbose', True)
 
+    @property
+    def refresh_command(self):
+        '''
+        property responsible for verifying that we are in verbose mode
+        '''
+        return self.config.get('refresh_command', ['true'])
+
     def apply_result(self, targets):
         '''
         method responsible for carrying out the results of the observations
@@ -76,6 +85,7 @@ class __App():
                 fd.write(f'}}')
 
                 print('call command', self.config.get('refresh_command', 'test'))
+                call(self.refresh_command, shell=False)
         
             self._older_online_targets = { target for target in online_targets }
         elif self.is_verbose:

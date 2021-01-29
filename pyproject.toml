@@ -1,14 +1,18 @@
 [tool.poetry]
 name = "ngx_upstream_sentinel"
-version = "0.0.1"
-description = "Smart Sentinel for Upstreams to nginx"
+version = "0.0.3"
+description = ""
 authors = ["Rodrigo Pinheiro Matias <rodrigopmatias@gmail.com>"]
-license = "MIT"
+
+[tool.poetry.scripts]
+ngx_up_sentinel = "ngx_upstream_sentinel:main"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.6"
+requests = "^2.25.1"
 
 [tool.poetry.dev-dependencies]
+pytest = "^5.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
